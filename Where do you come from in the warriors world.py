@@ -6,11 +6,43 @@ tribeofrushingwater = 0
 bloodclan = 0
 sundrownplace = 0
 twoleghomes = 0
-welcome_message = input ('Welcome to "Where Do You Come From in the Warriors World!" push A and then enter to begin when ready! (Case sensitive, please use a capital A)')
+welcome_message = input ('Welcome to "Where Do You Come From in the Warriors World! \n \
+ Push A and then enter to begin when ready! \n \
+ (Case sensitive, please use a capital A)\n')
 if welcome_message == 'A':
-    favouritepartofbooks = input ('First off, choose one think that you enjoy the most about the Warriors series - A: The evil characters. B: The forbidden relationships. C: The Starclan dreams. D: The drama :3. E: The chill parts!')
-    wheretolive = input ("Great! Now, choose a place you'd want to stay - A: By the ocean. B: In a comfy, welcoming home. C: In a forest cottage. D: In a tiny, old city appartment. E: On a remote mountainside. F: Sleeping under the stars.")
-    genreofbook = input ("Choose a genre of books from this list - A: Fantasy. B: Romance. C: Action. D: Mystery. E: Survival. F: Horror.")
+    favouritepartofbooks = input ('First off, choose one think that you enjoy the most about the Warriors series: \n \
+     A: The evil characters. \n \
+     B: The forbidden relationships. \n \
+     C: The Starclan dreams.\n \
+     D: The drama :3. \n \
+     E: The chill parts! \n')
+    wheretolive = input ("Great! Now, choose a place you'd want to stay: \n \
+    A: By the ocean. \n \
+    B: In a comfy, welcoming home. \n \
+    C: In a forest cottage. \n \
+    D: In a tiny, old city appartment. \n \
+    E: On a remote mountainside. \n \
+    F: Sleeping under the stars. \n")
+    genreofbook = input ("Choose a genre of books from this list: \n \
+    A: Fantasy. \n \
+    B: Romance. \n \
+    C: Action. \n \
+    D: Mystery. \n \
+    E: Survival. \n \
+    F: Horror. \n")
+    bestmedicinecat = input ("Out of these four medecine cats, choose one you think is the best! \n \
+    A: Mothwing. \n \
+    B: Runningnose. \n \
+    C: Spottedleaf. \n \
+    D: Kestrelflight. \n")
+    bestleader = input ("Out of these leaders, which one do you think is the best? \n \
+      A: Bramblestar. \n \
+      B: Scourge. \n \
+      C: Firestar. \n \
+      D: Bluestar. \n \
+      E: Leopardstar. \n \
+      F: Onestar. \n \
+      G: Rowanstar. \n")
     if favouritepartofbooks == 'A':
         bloodclan += 1
         shadowclan += 1
@@ -56,6 +88,29 @@ if welcome_message == 'A':
         shadowclan += 1
     if genreofbook == 'F':
         bloodclan += 1
+    if bestmedicinecat == 'A':
+        riverclan += 1
+    if bestmedicinecat == 'B':
+        shadowclan += 1
+    if bestmedicinecat == 'C':
+        thunderclan += 1
+    if bestmedicinecat == 'D':
+        windclan += 1
+    if bestleader == 'A':
+        sundrownplace += 1
+    if bestleader == 'B':
+        bloodclan += 1
+    if bestleader == 'C':
+        twoleghomes += 1
+    if bestleader == 'D':
+        thunderclan += 1
+    if bestleader == 'E':
+        riverclan += 1
+    if bestleader == 'F':
+        windclan += 1
+    if bestleader == 'G':
+        shadowclan += 1
+
 if riverclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Riverclan!")
 elif thunderclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
