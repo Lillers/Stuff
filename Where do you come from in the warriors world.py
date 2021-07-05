@@ -6,11 +6,11 @@ tribeofrushingwater = 0
 bloodclan = 0
 sundrownplace = 0
 twoleghomes = 0
-welcome_message = input ('Welcome to "Where Do You Come From in the Warriors World! \n \
+welcome_message = input('Welcome to "Where Do You Come From in the Warriors World! \n \
  Push A and then enter to begin when ready! \n \
  (Case sensitive, please use a capital A)\n')
 if welcome_message == 'A':
-    favouritepartofbooks = input ('First off, choose one think that you enjoy the most about the Warriors series: \n \
+    favouritepartofbooks = input ('First off, choose one thing that you enjoy the most about the Warriors series: \n \
      A: The evil characters. \n \
      B: The forbidden relationships. \n \
      C: The Starclan dreams.\n \
