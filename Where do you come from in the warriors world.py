@@ -73,16 +73,5 @@ elif sundrownplace == max(riverclan, thunderclan, shadowclan, windclan, tribeofr
 elif twoleghomes == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in a comfortable twoleg nest with your housefolk!")
 else:
-    answer = ("Your answer is a tie! Maybe try again?")
+    answer = ("Your answer is a tie!")
 print (answer)
-    
-                         
-            
-
-        
-        
-        
-        
-
-        
-    
