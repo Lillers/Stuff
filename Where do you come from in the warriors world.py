@@ -10,6 +10,7 @@ welcome_message = input ('Welcome to "Where Do You Come From in the Warriors Wor
 if welcome_message == 'A':
     favouritepartofbooks = input ('First off, choose one think that you enjoy the most about the Warriors series - A: The evil characters. B: The forbidden relationships. C: The Starclan dreams. D: The drama :3. E: The chill parts!')
     wheretolive = input ("Great! Now, choose a place you'd want to stay - A: By the ocean. B: In a comfy, welcoming home. C: In a forest cottage. D: In a tiny, old city appartment. E: On a remote mountainside. F: Sleeping under the stars.")
+    genreofbook = input ("Choose a genre of books from this list - A: Fantasy. B: Romance. C: Action. D: Mystery. E: Survival. F: Horror.")
     if favouritepartofbooks == 'A':
         bloodclan += 1
         shadowclan += 1
@@ -41,22 +42,38 @@ if welcome_message == 'A':
         tribeofrushingwater += 1
     if wheretolive == 'F':
         windclan += 1
+    if genreofbook == 'A':
+        riverclan += 1
+    if genreofbook == 'B':
+        twoleghomes += 1
+        sundrownplace += 1
+    if genreofbook == 'C':
+        thunderclan += 1
+    if genreofbook == 'D':
+        windclan += 1
+    if genreofbook == 'E':
+        tribeofrushingwater += 1
+        shadowclan += 1
+    if genreofbook == 'F':
+        bloodclan += 1
 if riverclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Riverclan!")
-if thunderclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif thunderclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Thunderclan!")
-if shadowclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif shadowclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Shadowclan!")
-if windclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif windclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Windclan!")
-if tribeofrushingwater == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif tribeofrushingwater == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in the Tribe of Rushing Water!")
-if bloodclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif bloodclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live with the cats of Bloodclan!")
-if sundrownplace == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif sundrownplace == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live by the Sundrownplace! Maybe you've met Midnight, too!")
-if twoleghomes == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif twoleghomes == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in a comfortable twoleg nest with your housefolk!")
+else:
+    answer = ("Your answer is a tie! Maybe try again?")
 print (answer)
     
                          
