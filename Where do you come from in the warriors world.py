@@ -51,7 +51,12 @@ if windclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingw
     answer = ("You live in Windclan!")
 if tribeofrushingwater == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in the Tribe of Rushing Water!")
-if
+if bloodclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+    answer = ("You live with the cats of Bloodclan!")
+if sundrownplace == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+    answer = ("You live by the Sundrownplace! Maybe you've met Midnight, too!")
+if twoleghomes == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+    answer = ("You live in a comfortable twoleg nest with your housefolk!")
 print (answer)
     
                          
