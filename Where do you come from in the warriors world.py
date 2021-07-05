@@ -6,7 +6,7 @@ tribeofrushingwater = 0
 bloodclan = 0
 sundrownplace = 0
 twoleghomes = 0
-welcome_message = input('Welcome to "Where Do You Come From in the Warriors World! \n \
+welcome_message = input ('Welcome to "Where Do You Come From in the Warriors World! \n \
  Push A and then enter to begin when ready! \n \
  (Case sensitive, please use a capital A)\n')
 if welcome_message == 'A':
@@ -43,6 +43,11 @@ if welcome_message == 'A':
       E: Leopardstar. \n \
       F: Onestar. \n \
       G: Rowanstar. \n")
+     herbs = input ("Herbs? \n \
+     A: I have no idea about them and that they do. \n \
+     B: Herbs are for softies. \n \
+     C: That's for our healer to deal with. \n \
+     D: Our clan uses multiple herbs for all kinds of problems. \n")
     if favouritepartofbooks == 'A':
         bloodclan += 1
         shadowclan += 1
@@ -110,7 +115,18 @@ if welcome_message == 'A':
         windclan += 1
     if bestleader == 'G':
         shadowclan += 1
-
+    if herbs == 'A':
+        twoleghomes += 1
+        sundrownplace += 1
+    if herbs == 'B':
+        bloodclan += 1
+    if herbs == 'C':
+        tribeofrushingwater += 1
+    if herbs == 'D':
+        thunderclan += 1
+        riverclan += 1
+        shadowclan += 1
+        windclan += 1
 if riverclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Riverclan!")
 elif thunderclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
