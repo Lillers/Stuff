@@ -10,36 +10,42 @@ tribeofrushingwater = 0
 bloodclan = 0
 sundrownplace = 0
 twoleghomes = 0
-welcome_message = tkinter.simpledialog.askstring ('Welcome', 'Welcome to "Where Do You Come From in the Warriors World! \
+welcome_message = tkinter.simpledialog.askstring (\
+'Welcome', 'Welcome to "Where Do You Come From in the Warriors World! \
 Push A and then enter to begin when ready! \
 (Case sensitive, please use a capital A)')
 if welcome_message == 'A':
-    favouritepartofbooks = tkinter.simpledialog.askstring ('Favourite Part of Books', 'First off, choose one thing that you enjoy the most about the Warriors series:  \
+    favouritepartofbooks = tkinter.simpledialog.askstring (\
+    'Favourite Part of Books', 'First off, choose one thing that you enjoy the most about the Warriors series:  \
     A: The evil characters. \
     B: The forbidden relationships. \
     C: The Starclan dreams. \
     D: The drama :3. \
     E: The chill parts!')
-    wheretolive = tkinter.simpledialog.askstring ('Where to Live', "Great! Now, choose a place you'd want to stay: \
+    wheretolive = tkinter.simpledialog.askstring (\
+    'Where to Live', "Great! Now, choose a place you'd want to stay: \
     A: By the ocean. \
     B: In a comfy, welcoming home. \
     C: In a forest cottage. \
     D: In a tiny, old city appartment. \
     E: On a remote mountainside. \
     F: Sleeping under the stars.")
-    genreofbook = tkinter.simpledialog.askstring ('Genre of Book', "Choose a genre of books from this list: \
+    genreofbook = tkinter.simpledialog.askstring (\
+    'Genre of Book', "Choose a genre of books from this list: \
     A: Fantasy. \
     B: Romance. \
     C: Action. \
     D: Mystery. \
     E: Survival. \
     F: Horror.")
-    bestmedicinecat = tkinter.simpledialog.askstring ('Best Medicine Cat', "Out of these four medecine cats, choose one you think is the best! \
+    bestmedicinecat = tkinter.simpledialog.askstring (\
+    'Best Medicine Cat', "Out of these four medecine cats, choose one you think is the best! \
     A: Mothwing. \
     B: Runningnose. \
     C: Spottedleaf. \
     D: Kestrelflight.")
-    bestleader = tkinter.simpledialog.askstring ('Best Leader', "Out of these leaders, which one do you think is the best? \
+    bestleader = tkinter.simpledialog.askstring (\
+    'Best Leader', "Out of these leaders, which one do you think is the best? \
     A: Bramblestar. \
     B: Scourge. \
     C: Firestar. \
@@ -133,21 +139,29 @@ if herbs == 'D':
     riverclan += 1
     shadowclan += 1
     windclan += 1
-if riverclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+if riverclan == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Riverclan!")
-elif thunderclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif thunderclan == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Thunderclan!")
-elif shadowclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif shadowclan == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Shadowclan!")
-elif windclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif windclan == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in Windclan!")
-elif tribeofrushingwater == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif tribeofrushingwater == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in the Tribe of Rushing Water!")
-elif bloodclan == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif bloodclan == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live with the cats of Bloodclan!")
-elif sundrownplace == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif sundrownplace == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live by the Sundrownplace! Maybe you've met Midnight, too!")
-elif twoleghomes == max(riverclan, thunderclan, shadowclan, windclan, tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
+elif twoleghomes == max(riverclan, thunderclan, shadowclan, windclan,\
+ tribeofrushingwater, bloodclan, sundrownplace, twoleghomes):
     answer = ("You live in a comfortable twoleg nest with your housefolk!")
 else:
     answer = ("Your answer is a tie!")
