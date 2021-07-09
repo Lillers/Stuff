@@ -11,52 +11,52 @@ bloodclan = 0
 sundrownplace = 0
 twoleghomes = 0
 welcome_message = tkinter.simpledialog.askstring (\
-'Welcome', 'Welcome to "Where Do You Come From in the Warriors World! \
+'Welcome', 'Welcome to "Where Do You Come From in the Warriors World! \n \
 Push A and then enter to begin when ready! \
 (Case sensitive, please use a capital A)')
 if welcome_message == 'A':
     favouritepartofbooks = tkinter.simpledialog.askstring (\
-    'Favourite Part of Books', 'First off, choose one thing that you enjoy the most about the Warriors series:  \
-    A: The evil characters. \
-    B: The forbidden relationships. \
-    C: The Starclan dreams. \
-    D: The drama :3. \
+    'Favourite Part of Books', 'First off, choose one thing that you enjoy the most about the Warriors series: \n \
+    A: The evil characters. \n \
+    B: The relationships. \n \
+    C: The Starclan dreams. \n \
+    D: The drama :3. \n \
     E: The chill parts!')
     wheretolive = tkinter.simpledialog.askstring (\
-    'Where to Live', "Great! Now, choose a place you'd want to stay: \
-    A: By the ocean. \
-    B: In a comfy, welcoming home. \
-    C: In a forest cottage. \
-    D: In a tiny, old city appartment. \
-    E: On a remote mountainside. \
+    'Where to Live', "Great! Now, choose a place you'd want to stay: \n \
+    A: By the ocean. \n \
+    B: In a comfy, welcoming home. \n \
+    C: In a forest cottage. \n \
+    D: In a tiny, old city appartment. \n \
+    E: On a remote mountainside. \n \
     F: Sleeping under the stars.")
     genreofbook = tkinter.simpledialog.askstring (\
-    'Genre of Book', "Choose a genre of books from this list: \
-    A: Fantasy. \
-    B: Romance. \
-    C: Action. \
-    D: Mystery. \
-    E: Survival. \
+    'Genre of Book', "Choose a genre of books from this list: \n \
+    A: Fantasy. \n \
+    B: Romance. \n \
+    C: Action. \n \
+    D: Mystery. \n \
+    E: Survival. \n \
     F: Horror.")
     bestmedicinecat = tkinter.simpledialog.askstring (\
-    'Best Medicine Cat', "Out of these four medecine cats, choose one you think is the best! \
-    A: Mothwing. \
-    B: Runningnose. \
-    C: Spottedleaf. \
+    'Best Medicine Cat', "Out of these four medicine cats, choose one you think is the best! \n \
+    A: Mothwing. \n \
+    B: Runningnose. \n \
+    C: Spottedleaf. \n \
     D: Kestrelflight.")
     bestleader = tkinter.simpledialog.askstring (\
-    'Best Leader', "Out of these leaders, which one do you think is the best? \
-    A: Bramblestar. \
-    B: Scourge. \
-    C: Firestar. \
-    D: Bluestar. \
-    E: Leopardstar. \
-    F: Onestar. \
+    'Best Leader', "Out of these leaders, which one do you think is the best? \n \
+    A: Bramblestar. \n \
+    B: Scourge. \n \
+    C: Firestar. \n \
+    D: Bluestar. \n \
+    E: Leopardstar. \n \
+    F: Onestar. \n \
     G: Rowanstar.")
-    herbs = tkinter.simpledialog.askstring ('Herbs', "Herbs? \
-A: I have no idea about them and that they do. \
-B: Herbs are for softies. \
-C: That's for our healer to deal with. \
+    herbs = tkinter.simpledialog.askstring ('Herbs', "Herbs? \n \
+A: I have no idea about them and that they do. \n \
+B: Herbs are for softies. \n \
+C: That's for our healer to deal with. \n \
 D: Our clan uses multiple herbs for all kinds of problems.")
 else:
     print ("Okay!")
