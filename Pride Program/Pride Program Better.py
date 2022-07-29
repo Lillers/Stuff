@@ -15,6 +15,7 @@ root.withdraw();
 dictionary = {};
 read_from_file();
 pride_query = tkinter.simpledialog.askstring('Pride', 'Name an LGBTQ+ term!');
+pride_query = pride_query.upper()
 if pride_query in dictionary:
     result = dictionary[pride_query];
     tkinter.messagebox.showinfo('Definition', pride_query + ' is ' + result);
